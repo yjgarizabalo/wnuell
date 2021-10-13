@@ -6,6 +6,13 @@ app.get('/', (req, res) => {
   res.send('hola, wnuel');
 })
 
+app.get('/productos', (req, res) => {
+  res.json({
+    nombre: 'zapatos',
+    precio: 120000
+  });
+})
+
 app.listen(port, () => {
-  console.log('Puerto |' + port);
+  console.log('Puerto | ' + port);
 })
